@@ -1,0 +1,40 @@
+.site-footer {
+    margin: 5rem 0 0 0;
+    padding: 5rem 0 0 0;
+    border-top: 1px solid #e1e1e1;
+}
+
+.site-footer h3 {
+    margin: 0 0 .5rem 0;
+    text-align: center;
+}
+
+.grid-footer > div {
+    margin: 0 0 2rem 0;
+}
+
+.footer-menu a {
+    display: block;
+    text-align: center;
+}
+
+.footer-menu a:hover {
+    color: #037bc0;
+}
+
+.copyright {
+    text-align: center;
+    margin: 5rem 0 2rem 0;
+}
+
+@media ( min-width: 768px ) { 
+    .grid-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .grid-footer > div {
+        margin: 0;
+    }
+
+}

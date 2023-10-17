@@ -1,0 +1,26 @@
+.contenido-principal {
+    display: grid;
+    padding: 5rem 0 0 0;
+}
+
+.contenido-nosotros {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat( auto-fit, minmax( 25rem, 1fr) );
+    column-gap: 4rem;
+    align-items: center;
+}
+
+.informacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem;
+}
+
+@media ( min-width: 768px ) {
+    .informacion-nosotros {
+        padding: 0;
+    }
+
+}

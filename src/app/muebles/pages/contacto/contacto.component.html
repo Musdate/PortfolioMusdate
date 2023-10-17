@@ -1,0 +1,82 @@
+<app-nav-bar />
+
+<main class="contenido-principal container">
+    <h2 class="text-center">Contacto</h2>
+
+    <form action="" class="formulario">
+        <fieldset>
+            <legend>Tus Datos</legend>
+
+            <div class="campo">
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" type="text" placeholder="Tu Nombre">
+            </div>
+
+            <div class="campo">
+                <label for="asunto">Asunto: </label>
+                <input id="asunto" type="text" placeholder="Tu Asunto">
+            </div>
+
+            <div class="campo">
+                <label for="email">Email: </label>
+                <input id="email" type="email" placeholder="Tu Email">
+            </div>
+
+            <div class="campo">
+                <label for="fono">Telefono: </label>
+                <input id="fono" type="tel" placeholder="Tu Teléfono">
+            </div>
+
+            <div class="campo">
+                <label for="msg">Mensaje: </label>
+                <textarea id="msg" cols="20" rows="10"></textarea>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>País</legend>
+
+            <div class="campo">
+                <label for="pais">País</label>
+                <select id="pais">
+                    <option value=""> -- Seleccione -- </option>
+                    <option value="CL"> Chile </option>
+                    <option value="CO"> Colombia </option>
+                    <option value="MX"> México </option>
+                    <option value="AR"> Argentina </option>
+                </select>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Información Extra</legend>
+
+            <div class="campo">
+                <label for="cliente">Cliente</label>
+                <input id="cliente" type="radio" name="tipo" value="cliente">
+            </div>
+
+            <div class="campo">
+                <label for="proveedor">Proveedor</label>
+                <input id="proveedor" type="radio" name="tipo" value="proveedor">
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoría de Interés</label>
+                <input list="categorias" name="categorias">
+                <datalist id="categorias">
+                    <option value="Cocina">
+                    <option value="Exterior">
+                    <option value="Recamaras">
+                    <option value="Oficina">
+                </datalist>
+            </div>
+        </fieldset>
+
+        <input class="btn" type="submit" value="Enviar Formulario">
+
+    </form>
+
+</main>
+
+<app-footer />

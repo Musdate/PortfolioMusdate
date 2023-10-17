@@ -1,0 +1,48 @@
+.contenido-principal {
+    display: grid;
+    padding: 5rem 0 0 0;
+}
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+@media ( min-width: 768px ) {
+    .formulario {
+        width: 70rem;
+    }
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin: 0 0 2rem 0;
+}
+
+.formulario legend {
+    background-color: #005485;
+    color: #FFFFFF;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin: 0 0 4rem 0;
+}
+
+.campo {
+    display: flex;
+    margin: 0 0 2rem 0;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not( [type="radio"] ),
+.campo textarea,
+.campo select {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
