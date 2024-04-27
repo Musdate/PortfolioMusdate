@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'dashboard',
+    path: 'landing',
     loadChildren: () => import('./dashboard/dashboard.module').then( m => m.DashboardModule )
   },
   {
@@ -11,8 +11,12 @@ const routes: Routes = [
     loadChildren: () => import('./muebles/muebles.module').then( m => m.MueblesModule )
   },
   {
+    path: 'cafeteria',
+    loadChildren: () => import('./cafeteria/cafeteria.module').then( m => m.CafeteriaModule )
+  },
+  {
     path: '**',
-    redirectTo: 'dashboard'
+    redirectTo: 'landing'
   }
 ];
 

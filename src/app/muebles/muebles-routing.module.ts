@@ -11,13 +11,13 @@ const routes: Routes = [
   {
     path: '',
     children: [
-      { path: 'dashboard', component: DashboardComponent },
+      { path: 'landing', component: DashboardComponent },
       { path: 'nosotros', component: NosotrosComponent },
       { path: 'tienda', component: TiendaComponent },
       { path: 'blog', component: BlogComponent },
       { path: 'galeria', component: GaleriaComponent },
       { path: 'contacto', component: ContactoComponent },
-      { path: '**', redirectTo: 'dashboard' }
+      { path: '**', redirectTo: 'landing' }
     ]
   }
 ];
